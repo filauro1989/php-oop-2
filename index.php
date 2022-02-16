@@ -10,6 +10,7 @@
         $redUser->setLevel("bronze");
 
         $firstProduct = new Product('Cacciavite', 15);
+        $firstProduct->setCategory("Tools");
 
     } catch (Exception $error) {
         
@@ -37,6 +38,11 @@
         <li><?php echo $redUser->getEmail() ?></li>
         <li><?php var_dump($redUser->getCard()) ?></li>
         <li>Sconto <?php echo $redUser->getLevel() ?> %</li>
+    </ul>
+    <ul>
+        <li><?php echo $firstProduct->getName() ?></li>
+        <li><?php echo $firstProduct->getPrice() ?></li>
+        <li><?php echo $firstProduct->getCategory() ?></li>
     </ul>
     
 </body>
