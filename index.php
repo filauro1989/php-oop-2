@@ -5,9 +5,9 @@
 
     try {
         $redUser = new User ('Francesco', 'Filauro', 'filauro1989@gmail.com', new Card(1234567896326547, 546, 20/05/2028));
-
+        $redUser->setAddress("via bulini");
+        $redUser->setPhoneNumber("3321144456");
         $redUser->setLevel("bronze");
-        var_dump($redUser->setLevel("bronze"));
 
         $firstProduct = new Product('Cacciavite', 15);
 
@@ -36,7 +36,7 @@
         <li><?php echo $redUser->getPhoneNumber() ?></li>
         <li><?php echo $redUser->getEmail() ?></li>
         <li><?php var_dump($redUser->getCard()) ?></li>
-        <li><?php var_dump($redUser->getLevel())  ?></li>
+        <li>Sconto <?php echo $redUser->getLevel() ?> %</li>
     </ul>
     
 </body>
