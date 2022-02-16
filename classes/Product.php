@@ -10,7 +10,7 @@
             try {
                 $this->name = $name;
                 $this->price = $price;
-                    
+
             } catch (TypeError $error) {
                 throw new Exception ($error->getMessage());
             }    
