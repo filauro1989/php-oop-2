@@ -75,6 +75,9 @@
          */ 
         public function setCvv($cvv)
         {
+            if (!is_numeric($cvv)){
+                throw new Exception('Is not a number');
+            }
                 $this->cvv = $cvv;
 
                 return $this;

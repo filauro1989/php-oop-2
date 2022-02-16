@@ -93,6 +93,7 @@
          */ 
         public function getPhoneNumber()
         {
+
                 return $this->phoneNumber;
         }
 
@@ -103,6 +104,9 @@
          */ 
         public function setPhoneNumber($phoneNumber)
         {
+                if (!is_numeric($phoneNumber)){
+                        throw new Exception('Is not a number');
+                }
                 $this->phoneNumber = $phoneNumber;
 
                 return $this;

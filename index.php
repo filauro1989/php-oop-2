@@ -4,7 +4,7 @@
     require_once __DIR__ . "/classes/Product.php";
 
     try {
-        $redUser = new User ('Francesco', 'Filauro', 'filauro1989@gmail.com', new Card(1234567896326547, 546, 20/05/2028));
+        $redUser = new User ('Francesco', 'Filauro', 'filauro1989@gmail.com', new Card(1234567896326547, 325, 20/05/2028));
         $redUser->setAddress("via bulini");
         $redUser->setPhoneNumber("3321144456");
         $redUser->setLevel("bronze");

@@ -5,7 +5,6 @@
 
         protected $level;
         
-
         public function __construct($level)
         {
                 try {
